@@ -151,5 +151,13 @@ with gr.Blocks(title="Historical Figures Chatbot") as demo:
         outputs=[user_input, chatbot]
     )
 
+#Footer -----
+    gr.Markdown(
+    "Use via API · Built with Gradio · Settings ⚙  \n"
+    "LangSmith1 Tracing: Enabled ✅",
+    elem_classes="footer"
+)
+
 if __name__ == "__main__":
     demo.launch()
+
